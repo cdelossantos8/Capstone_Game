@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://b8ow7efmpfoxy"]
+
+[ext_resource type="PackedScene" uid="uid://ckitlj8fprl2d" path="res://Assets/Characters_psx/Characters_psx/Models/Killers/Character_Monster.fbx" id="1_brnyg"]
+
+[sub_resource type="Environment" id="Environment_brnyg"]
+background_mode = 2
+
+[node name="Node3D" type="Node3D" unique_id=265791810]
+
+[node name="Character_Monster" parent="." unique_id=1768638896 instance=ExtResource("1_brnyg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.032887936, 0, -0.1855138)
+
+[node name="Camera3D" type="Camera3D" parent="Character_Monster" unique_id=1463369522]
+transform = Transform3D(1, 0, 0, 0, 0.79652995, -0.6045992, 0, 0.6045992, 0.79652995, 0, 4.147714, 2.9491572)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=174726738]
+transform = Transform3D(1, 0, 0, 0, 0.79652995, -0.6045992, 0, 0.6045992, 0.79652995, 0, 3.5813196, 2.867125)
+light_color = Color(0.99766916, 0.6984413, 0.7407742, 1)
+light_energy = 4.485
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1869466936]
+environment = SubResource("Environment_brnyg")
